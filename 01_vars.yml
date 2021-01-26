@@ -1,0 +1,10 @@
+ - name: Enable httpd service
+    ansible.builtin.systemd:
+      name: httpd
+      state: started
+      enabled: yes
+    register: httpd_status
+
+  - name: Show Status
+    debug:
+      var: httpd_status
