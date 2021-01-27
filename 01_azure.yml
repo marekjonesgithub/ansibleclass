@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   vars:
-    user: marek
+    user: ansible-marek
   tasks:
   - name: Create resource group
     azure_rm_resourcegroup:
